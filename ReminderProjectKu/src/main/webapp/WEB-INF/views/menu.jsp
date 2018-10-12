@@ -26,6 +26,7 @@
 						<li><a href="${pageContext.request.contextPath}/reportlist.html">Invoice Menu</a></li>
 						<li><a href="${pageContext.request.contextPath}/uploadfile.html">Upload File Menu</a></li>
 						<li><a href="${pageContext.request.contextPath}/sendingemail.html">Reminder Menu</a></li>
+						<li><a href="${pageContext.request.contextPath}/scheduler.html">Scheduler</a></li>
 					</ul>
 				</div>
 			</div>

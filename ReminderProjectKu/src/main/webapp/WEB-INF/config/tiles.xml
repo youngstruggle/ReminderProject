@@ -60,6 +60,12 @@
 		<put-attribute name="body" value="/WEB-INF/views/reminderformpage.jsp"></put-attribute>
 	</definition>
 	
+	<!-- scheduler -->
+	<definition name="schedulerpage" extends="base.definition">
+		<put-attribute name="title" value="Scheduler"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/schedulerpage.jsp"></put-attribute>
+	</definition>
+	
 	<!-- formdetail -->
 	<definition name="formdetail" extends="base.definition">
 		<put-attribute name="title" value="formdetail example"></put-attribute>

@@ -81,7 +81,7 @@
 							href="${pageContext.request.contextPath}/reportsedit/${report.reportId}">Update</a></td>
 						<td><a class="btn btn-danger"
 							href="${pageContext.request.contextPath}/reportsdelete/${report.reportId}">Delete</a></td>
-						<td><a class="btn btn-info" href="${pageContext.request.contextPath}/reminderreports/${report.reportId}">Reminder</a></td>
+						<td><a class="btn btn-info" href="${pageContext.request.contextPath}/reminderreports/${report.reportId}">Reminder</a></td> 
 					</tr>
 				</c:forEach>
 			</tbody>

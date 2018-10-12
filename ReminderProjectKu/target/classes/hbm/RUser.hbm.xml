@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 13, 2018 12:42:48 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping schema="dbo">
+	<class name="entities.RUser" table="R_USER">
+		<id name="userId" type="int">
+			<column name="user_id" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="username" />
+		</property>
+		<property name="division" type="java.lang.String">
+			<column name="division" />
+		</property>
+		<property name="flAdmin" type="java.lang.String">
+			<column name="fl_Admin" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+	</class>
+</hibernate-mapping>
