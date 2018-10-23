@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 23, 2018 3:58:19 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Student" table="STUDENT">
+        <id name="id" type="string">
+            <column name="STUDENT_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="section" type="java.lang.String">
+            <column name="SECTION" />
+        </property>
+        
+        <many-to-one name="address" class="entities.Address"
+            column="ADDRESS_ID" unique="true" not-null="true"
+            cascade="all" />
+    </class>
+</hibernate-mapping>

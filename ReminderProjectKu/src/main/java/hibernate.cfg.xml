@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
                                          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-	<session-factory name="">
+	<session-factory>
 		<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
 		<property name="hibernate.connection.password">password.1</property>
 		<property name="hibernate.connection.url">jdbc:sqlserver://localhost:18128;databaseName=REMINDER</property>
@@ -11,9 +11,19 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
 		<property name="hibernate.connection.isolation">2</property>
 		<property name="hibernate.current_session_context_class">thread</property>
-
-		<mapping resource="hbm/RUser.hbm.xml" />
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+	
 		<mapping resource="hbm/FilesUpload.hbm.xml" />
 		<mapping resource="hbm/TrReports.hbm.xml" />
+
+		<mapping resource="hbm/Customer.hbm.xml" />
+		<mapping resource="hbm/Txn.hbm.xml" />
+
+		<mapping resource="hbm/User.hbm.xml" />
+		<mapping resource="hbm/UserDetail.hbm.xml" />
+		
+		<mapping resource="hbm/Student.hbm.xml" />
+		<mapping resource="hbm/Address.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

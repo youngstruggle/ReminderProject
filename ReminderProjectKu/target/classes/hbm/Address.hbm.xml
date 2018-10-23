@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 23, 2018 3:58:04 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Address" table="ADDRESS">
+        <id name="id" type="string">
+            <column name="ADDRESS_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="street" type="java.lang.String">
+            <column name="STREET" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+    </class>
+</hibernate-mapping>
